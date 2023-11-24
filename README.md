@@ -1,26 +1,19 @@
-[![Bread](images/top-logo.png)](https://brd.com/)
 
-<div align="center">
-  <a href="https://apps.apple.com/us/app/brd-bitcoin-wallet-btc-bch-eth/id885251393"><img align="center" width="140px" height="47px" src="images/app_store.png"/></a>
-  <a href="https://play.google.com/store/apps/details?id=com.breadwallet"><img align="center" width="170px" height="47px" src="images/play_store.png"/></a>
-</div>
-
-BRD is the best way to get started with bitcoin.
+eCoin is the best way to get started with bitcoin.
 Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users.
 
-### Fastsync
-[Fastsync](https://brd.com/blog/fastsync-explained) is a new feature in the BRD app that makes Bitcoin wallets sync in seconds, while also keeping BRD technology ahead of the curve as SPV slowly phases out.
+### Fastsync is a new feature in the eCoin app that makes Bitcoin wallets sync in seconds, while also keeping eCoin technology ahead of the curve as SPV slowly phases out.
 When Fastsync is enabled the BRD wallet uses our server technology, [Blockset](https://docs.blockset.com/) to sync, send and receive instantly!
 
 ### Your Decentralized Bitcoin Wallet
 
-Unlike other mobile bitcoin wallets, **BRD** users have the option to disable Fastsync converting the wallet into a standalone bitcoin client.
+Unlike other mobile bitcoin wallets, **eCoin** users have the option to disable Fastsync converting the wallet into a standalone bitcoin client.
 It connects directly to the bitcoin network using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, and doesn't rely on servers that can be hacked or disabled.
 If BRD the company disappears, your private key can still be derived from the recovery phrase to recover your funds since your funds exist on the blockchain.
 
 ### Cutting-edge security
 
-**BRD** utilizes the latest mobile security features to protect users from malware, browser security holes, and even physical theft.
+**eCoin** utilizes the latest mobile security features to protect users from malware, browser security holes, and even physical theft.
 On Android The user’s private key is encrypted using the Android Keystore, inaccessible to anyone other than the user.
 On iOS the user’s private key is stored in the device keychain, secured by Secure Enclave, inaccessible to anyone other than the user.
 Users are also able to backup their wallet using iCloud Keychain to store an encrypted backup of their recovery phrase.
@@ -34,7 +27,7 @@ Any jailbreak app can grant itself access to every other app's keychain data. Th
 
 ### Designed with New Users in Mind
 
-Simplicity and ease-of-use is **BRD**'s core design principle. A simple recovery phrase (which we call a recovery key) is all that is needed to restore the user's wallet if they ever lose or replace their device. **BRD** is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), which means the user's balance and transaction history can be recovered just from the recovery key.
+Simplicity and ease-of-use is **eCoin**'s core design principle. A simple recovery phrase (which we call a recovery key) is all that is needed to restore the user's wallet if they ever lose or replace their device. **eCoin** is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), which means the user's balance and transaction history can be recovered just from the recovery key.
 
 ### Features
 
@@ -50,7 +43,7 @@ Simplicity and ease-of-use is **BRD**'s core design principle. A simple recovery
 
 ### Localization
 
-**BRD** is available in the following languages:
+**eCoin** is available in the following languages:
 
 - Chinese (Simplified and traditional)
 - Danish
@@ -66,7 +59,7 @@ Simplicity and ease-of-use is **BRD**'s core design principle. A simple recovery
 - Spanish
 - Swedish
 
-## About brd-mobile
+## About eCoin-mobile
 
 This repository is the BRD Mobile monorepo for iOS and Android, powered by a collection of Kotlin Multiplatform Mobile ([KMM](https://kotlinlang.org/lp/mobile/)) modules codenamed Cosmos.
 
@@ -88,8 +81,8 @@ The following modules are available, click on the name to learn more.
 
 **Mobile Applications**
 
-- [`brd-android`](/brd-android) A collection of gradle modules to build BRD Android.
-- [`brd-ios`](/brd-ios) xcode project containing BRD iOS, pre-configured to build and link Cosmos.
+- [`brd-android`](/eCoin-android) A collection of gradle modules to build BRD Android.
+- [`brd-ios`](/eCoin-ios) xcode project containing BRD iOS, pre-configured to build and link Cosmos.
 
 ## Development
 
@@ -100,10 +93,9 @@ The following modules are available, click on the name to learn more.
 
 ### Setup
 
-1. Clone this repository `git clone git@github.com:breadwallet/brd-mobile.git --recurse-submodules`
-2. (Optional, for BRD employees) checkout production resources: `git submodule update --checkout`
-3. Open the `Cosmos` folder using Intellij IDEA or Android Studio
-4. (iOS Development) Open the `brd-ios/breadwallet.xcworkspace` file in xcode
+1. Clone this repository `git clone
+2. Open the `Cosmos` folder using Intellij IDEA or Android Studio
+3.  (iOS Development) Open the `brd-ios/breadwallet.xcworkspace` file in xcode
 
 ## Advanced Setup
 
@@ -158,16 +150,9 @@ Packaging
 ./gradlew linkDebugFrameworkIosArm64 linkReleaseFrameworkIosArm64
 ```
 
-## Git History
-
-This repository merges the commit history of [BRD iOS](https://github.com/breadwallet/breadwallet-ios) and [BRD Android](https://github.com/breadwallet/breadwallet-android).
-To build BRD application versions before 4.10, please refer to the respective legacy git repository tags.
-
-A light clone of this repository can be created with `git clone git@github.com:breadwallet/brd-mobile.git --depth 50`
-
 
 ## Licensing
 
-**BRD** source code is available under the terms of the Business Source License 1.1 (`BUSL-1.1`), see [`LICENSE`](./LICENSE).
+**eCoin** source code is available under the terms of the Business Source License 1.1 (`BUSL-1.1`), see [`LICENSE`](./LICENSE).
 
 [WalletKit](https://github.com/blockset-corp/walletkit) is available under the terms of the MIT License.
