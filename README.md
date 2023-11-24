@@ -1,9 +1,7 @@
 
-eCoin is the best way to get started with bitcoin.
+### eCoin is the best way to get started with bitcoin.
 Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users.
 
-### Fastsync is a new feature in the eCoin app that makes Bitcoin wallets sync in seconds, while also keeping eCoin technology ahead of the curve as SPV slowly phases out.
-When Fastsync is enabled the BRD wallet uses our server technology, [Blockset](https://docs.blockset.com/) to sync, send and receive instantly!
 
 ### Your Decentralized Bitcoin Wallet
 
@@ -19,16 +17,6 @@ On iOS the user’s private key is stored in the device keychain, secured by Sec
 Users are also able to backup their wallet using iCloud Keychain to store an encrypted backup of their recovery phrase.
 The backup is encrypted with the BRD app PIN.
 
-#### Jailbreak Warning
-
-***Installation on jailbroken devices is strongly discouraged.***
-
-Any jailbreak app can grant itself access to every other app's keychain data. This means it can access your wallet and steal your bitcoin by self-signing as described [here](http://www.saurik.com/id/8) and including `<key>application-identifier</key><string>*</string>` in its .entitlements file.
-
-### Designed with New Users in Mind
-
-Simplicity and ease-of-use is **eCoin**'s core design principle. A simple recovery phrase (which we call a recovery key) is all that is needed to restore the user's wallet if they ever lose or replace their device. **eCoin** is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), which means the user's balance and transaction history can be recovered just from the recovery key.
-
 ### Features
 
 - Supports wallets for Bitcoin, Bitcoin Cash, Ethereum and ERC-20 tokens, Ripple, Hedera, Tezos
@@ -36,55 +24,6 @@ Simplicity and ease-of-use is **eCoin**'s core design principle. A simple recove
 - Private keys never leave your device and are end-to-end encrypted when using iCloud backup
 - Save a memo for each transaction (off-chain)
 
-### Bitcoin Specific Features
-- Supports importing [password protected](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki) paper wallets
-- Supports [JSON payment protocol](https://bitpay.com/docs/payment-protocol)
-- Supports SegWit and bech32 addresses
-
-### Localization
-
-**eCoin** is available in the following languages:
-
-- Chinese (Simplified and traditional)
-- Danish
-- Dutch
-- English
-- French
-- German
-- Italian
-- Japanese
-- Korean
-- Portuguese
-- Russian
-- Spanish
-- Swedish
-
-## About eCoin-mobile
-
-This repository is the BRD Mobile monorepo for iOS and Android, powered by a collection of Kotlin Multiplatform Mobile ([KMM](https://kotlinlang.org/lp/mobile/)) modules codenamed Cosmos.
-
-Cosmos breaks down into many modules that are bundled to produce a final Jar/AAR and Framework for mobile projects.
-Each module contains only code related to a single feature, helping keep the project organized and improve incremental build times.
-
-## Modules
-
-The following modules are available, click on the name to learn more.
-
-- [`cosmos-address-resolver`](/cosmos-address-resolver) Utilities for resolving addresses from name services ([UnstoppableDomains](https://unstoppabledomains.com/), [ENS](https://ens.domains/), [Fio](https://fioprotocol.io/), and [PayString](https://paystring.org/)).
-- [`cosmos-bakers-api-client`](/cosmos-bakers-api-client) Tezos baker data API client ([baking-bad.org](http://baking-bad.org)).
-- [`cosmos-brd-api-client`](/cosmos-brd-api-client) A Hydra compatible API wrapper for Kotlin and Swift.
-- [`cosmos-bundled`](/cosmos-bundled) Depends on all other modules to produce final dependency artifacts.
-- [`cosmos-exchange`](/cosmos-exchange) Presentation module for crypto exchange features.
-- [`cosmos-core`](/cosmos-core) Internal shared utilities for all other modules to leverage.
-- [`cosmos-preferences`](/cosmos-preferences) SharedPreferences and UserDefaults wrapper for common Kotlin code.
-- [`cosmos-websocket`](/cosmos-websocket) WebSocket client APIs for common Kotlin.
-
-**Mobile Applications**
-
-- [`brd-android`](/eCoin-android) A collection of gradle modules to build BRD Android.
-- [`brd-ios`](/eCoin-ios) xcode project containing BRD iOS, pre-configured to build and link Cosmos.
-
-## Development
 
 ### Prerequisites
 
